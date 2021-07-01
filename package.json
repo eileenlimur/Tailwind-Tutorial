@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwind build src/style.css -o dist/style.css"
+    "build": "tailwindcss build -i ./src/style.css -o ./dist/style.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,10 @@
     "url": "https://github.com/eileenlimur/Tailwind-Tutorial/issues"
   },
   "homepage": "https://github.com/eileenlimur/Tailwind-Tutorial#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
   }
 }
